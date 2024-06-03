@@ -16,7 +16,7 @@ export class DigitalMarketplace extends Contract {
   }
 
   optInToAsset(mbrTxn: PayTxn): void {
-    assert(this.txn.sender === this.app.address);
+    assert(this.txn.sender === this.app.creator);
     verifyPayTxn(mbrTxn, {
       receiver: this.app.address,
       amount: globals.minBalance + globals.assetOptInMinBalance,
