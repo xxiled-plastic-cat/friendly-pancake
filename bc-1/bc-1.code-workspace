@@ -6,6 +6,9 @@
     },
     {
       "path": "projects/bc-1"
+    },
+    {
+      "path": "projects/marketplace_frontend"
     }
   ],
   "settings": {
